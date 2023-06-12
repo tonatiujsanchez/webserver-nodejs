@@ -1,0 +1,22 @@
+
+{{!-- Opcion 1 --}}
+{{!-- 
+{{#if headerOrange  }}
+	<header id="header" class="alt">
+        <div class="logo"><a href="/">{{ nombre }} <span>{{ titulo }}</span></a></div>
+        <a href="#menu"><span>Menu</span></a>
+    </header>
+{{ else }}
+    <header id="header">
+        <div class="logo"><a href="/">{{ nombre }} <span>{{ titulo }}</span></a></div>
+        <a href="#menu"><span>Menu</span></a>
+    </header>
+{{/if}} --}}
+
+
+{{!-- Opcion 2 --}}
+<header id="header" class="{{#if headerOrange}}alt{{/if}}" >
+    <div class="logo"><a href="/">{{ nombre }} <span>{{ titulo }}</span></a></div>
+    <a href="#menu"><span>Menu</span></a>
+</header>
+
